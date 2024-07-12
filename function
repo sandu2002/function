@@ -1,0 +1,34 @@
+void main() {
+  //details
+
+  String name1 = "samin";
+  int age1 = 21;
+
+  String name2 = "kamal";
+  int age2 = 22;
+
+  String name3 = "sunil";
+  int age3 = 23;
+
+  String name4 = "nimal";
+  int age4 = 24;
+  //function
+
+  void printDetails(String name, int age) {
+    print("Hello $name you are $age years old");
+  }
+
+  //details of friend 1
+  printDetails(name1, age1);
+
+  //details of friend 2
+  printDetails(name2, age2);
+
+  //details of friend 3
+  printDetails(name3, age3);
+
+  //details of friend 4
+  printDetails(name4, age4);
+
+  //function
+}
