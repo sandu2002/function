@@ -1,0 +1,8 @@
+void main() {
+  double addNumber(int a, int b, int c, int d) {
+    return (a + b + c + d) / 4;
+  }
+
+  double result = addNumber(10, 20, 30, 40);
+  print(result);
+}
