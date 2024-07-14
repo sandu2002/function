@@ -1,6 +1,7 @@
 double shippingCost(String country, double weigth) {
   double baseRate = 40;
   double additionalCost = 0;
+  double shippingCost = 0;
 
   switch (country) {
     case "Germany":
@@ -22,11 +23,18 @@ double shippingCost(String country, double weigth) {
       print("not in list");
   }
 
-  double shippingCost = baseRate + additionalCost + weigth * 2;
+  if (additionalCost > 0) {
+    shippingCost = baseRate + additionalCost + weigth * 2;
+  }
+
   return shippingCost;
 }
 
 void main() {
   double cost = shippingCost("China", 120);
-  print(cost);
+  if (cost == 0) {
+    print("invaid country");
+  } else {
+    print(cost);
+  }
 }
