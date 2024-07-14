@@ -1,0 +1,23 @@
+//apply discount prices
+
+List<double> calculateNewPrice(List<int> prices) {
+  List<double> newPrices = [];
+
+  for (int price in prices) {
+    if (price > 40) {
+      double discount = 0.1;
+      double disPrice = price * discount;
+
+      double newPrice = price - disPrice;
+      newPrices.add(newPrice);
+    } else {
+      newPrices.add(price.toDouble());
+    }
+  }
+  return newPrices;
+}
+
+void main() {
+  final answer = calculateNewPrice([12, 333, 212, 444, 098]);
+  print(answer);
+}
