@@ -1,0 +1,8 @@
+int addNumberWithFourParameters({int a = 10, int b = 0, int c = 0, int d = 0}) {
+  return a + b + c + d;
+}
+
+void main() {
+  print(addNumberWithFourParameters());
+  print(addNumberWithFourParameters(a: 20, b: 30, c: 70, d: 23)); // change parameters
+}
