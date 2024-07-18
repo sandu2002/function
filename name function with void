@@ -1,0 +1,10 @@
+void printData({String name = "type the name", int age = 30}) {
+  print("hello $name you are $age years old");
+}
+
+void main() {
+  printData();
+
+//change data
+  printData(name: "samoin", age: 24);
+}
